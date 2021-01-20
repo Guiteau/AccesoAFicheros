@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="accesoAleatorioView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <TextArea fx:id="textArea_accesoAleatorio" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </TextArea>
+   </center>
+   <left>
+      <VBox alignment="CENTER" spacing="20.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <children>
+            <Label text="Código de equipo" />
+            <TextField fx:id="textField_codEquipo" />
+            <Label text="Nombre de equipo" />
+            <TextField fx:id="textField_nomEquipo" />
+            <Label text="Código de liga" />
+            <TextField fx:id="textField_codLiga" />
+            <Label text="Localidad" />
+            <TextField fx:id="textField_localidad" />
+            <Label text="Copas ganadas" />
+            <TextField fx:id="textField_copasGanadas" />
+            <CheckBox fx:id="checkBox_internacional" mnemonicParsing="false" text="Internacional" />
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox alignment="CENTER" spacing="20.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <children>
+            <Button fx:id="button_ultimoCodEquipo" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Último codEquipo" />
+            <Button fx:id="button_insercionAutomatica" mnemonicParsing="false" text="Inserción automática" />
+            <Button fx:id="button_insertar" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Insertar" />
+            <Button fx:id="button_modificar" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Modificar copas" />
+            <Button fx:id="button_visualizarRegistro" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Visualizar registro" />
+            <Button fx:id="button_visualizarTodo" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Visualizar todo" />
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+               <children>
+                  <Label alignment="TOP_CENTER" prefHeight="56.0" prefWidth="110.0" text="Contador chars &#10;nombre&#10;equipo" textAlignment="CENTER" />
+                  <TextField fx:id="textField_contadorCharsNombre" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" text="Contador&#10;chars localidad" textAlignment="CENTER" />
+                  <TextField fx:id="textField_contadorCharsLocalidad" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </right>
+   <top>
+      <Label text="Diego Méndez Esquerro" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>

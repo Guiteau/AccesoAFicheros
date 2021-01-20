@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+
+<TabPane fx:id="mainView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab fx:id="tab_accesoAficheros" text="Acceso a ficheros" />
+    <Tab fx:id="tab_accesoAleatorio" text="Acceso aleatorio" />
+      <Tab fx:id="tab_accesoXML" text="Acceso XML" />
+  </tabs>
+</TabPane>
